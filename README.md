@@ -18,8 +18,8 @@ You need R version above 3.6.1 to run this application. Other dependencies are:
 **From Github**
 
 * Now install the `devtools` package
-* `install.packages(devtools)`
-* `library(devtools)`
+* `install.packages("devtools")`
+* `library("devtools")`
 * Run command `install_github("ashishjain1988/VCFAnnotator-Tempus")`
 
 **From tar file**
