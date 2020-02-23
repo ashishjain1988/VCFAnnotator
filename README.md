@@ -3,7 +3,7 @@ This is an R package for the automatic annotation generation of the variants sup
 
 **Requirement**
 
-You need R version above 3.6.1 to run this application. Other dependencies are:
+You need R version 3.6.1 or above to run this application. Other dependencies are:
 
 * `tidyverse (>= 1.1.0)`
 * `ensurer (>= 1.1.0)`
