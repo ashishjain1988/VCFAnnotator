@@ -4,8 +4,9 @@ Title: VCFAnnotatorTempus
 Version: 1.0.0
 Author: Ashish Jain
 Maintainer: Ashish Jain <yourself@somewhere.net>
-Description: This package annotate the variants supplied in a VCF files from Broad Institute's ExAC Project.
+Description: This package annotate the variants supplied in a VCF file from Broad Institute's ExAC Project.
 License: GPL
+VignetteBuilder: knitr
 Depends:
     R (>= 3.6.1),
     tidyverse (>= 1.1.0),

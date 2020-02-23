@@ -24,7 +24,7 @@ You need R version 3.6.1 or above to run this application. Other dependencies ar
 
 **From tar file**
 
-* Run command `install.packages("<Path>/VCFAnnotatorTempus_1.0.0.tar.gz", repos = NULL)`
+* Run command `install.packages("<Absolute Path>/VCFAnnotatorTempus_1.0.0.tar.gz", repos = NULL)`
 
 **Running the VCF Annotator**
 

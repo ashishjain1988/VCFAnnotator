@@ -1,5 +1,5 @@
 ---
-title: "VCFAnnotator-Tempus: A tool to annotate the variants supplied in a VCF files"
+title: "VCFAnnotator-Tempus: A tool to annotate the variants supplied in a VCF file"
 author: |
     | Ashish Jain
     | Bioinformatics and Computational Biology
