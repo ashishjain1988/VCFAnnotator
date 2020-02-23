@@ -14,10 +14,14 @@ information in the VCF format}
 The output is a dataframe object containing the
 annotation of the variants parsed from the VCF file and
 downloaded from the Broad Institute's ExAC Project. The
-annotation includes the chromosome,
+annotation includes the chromosome, Postion, Variant Type,
+Depth of the reads, Alternate Allele Count, Percentage of
+Allele to Gentotype, Allele Frequency, Consequence.
 }
 \description{
-Annotate the variants supplied in a VCF file
+This function annotates the variants by parsing
+VCF file supplied as input and call the Broad Institue's ExAC
+project API to get additional variant annotations.
 }
 \author{
 Ashish Jain

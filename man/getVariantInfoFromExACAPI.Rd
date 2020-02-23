@@ -2,7 +2,7 @@
 % Please edit documentation in R/batchExACCall.R
 \name{getVariantInfoFromExACAPI}
 \alias{getVariantInfoFromExACAPI}
-\title{Annotate the variants supplied in a VCF file}
+\title{Batch Call to the Broad Institue's ExAC project API to get Variant Annotations}
 \usage{
 getVariantInfoFromExACAPI(codeVector)
 }
@@ -14,10 +14,11 @@ required for Broad Institue's ExAC project API.}
 \value{
 The output is a list object containing the
 variant annotation information from the Broad Institute's ExAC
-Project.
+Project for each variant supplied.
 }
 \description{
-Annotate the variants supplied in a VCF file
+This function make a batch call to the Broad Institue's ExAC project API
+to retreive the annotation information of variants.
 }
 \author{
 Ashish Jain
