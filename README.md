@@ -49,4 +49,4 @@ VCFfilePath <- system.file('extdata', 'Challenge_data.vcf', package = 'VCFAnnota
 t <- annotateVariant(file = VCFfilePath)
 write.table(t,"Challenge_data_annotated_variants.txt",sep="\t",quote = F,row.names = F)
 ```
-In addition to that, there is another function `getVariantInfoFromExACAPI` which make a batch call to the Broad Institue's ExAC project API to retreive the annotation information of variants. More information about this function can be found by typing `?getVariantInfoFromExACAPI` in R terminal.
+In addition to that, there is another function `getVariantInfoFromExACAPI` which make a batch call to the Broad Institue's ExAC project API to retreive the annotation information of variants. More information about this function can be found by typing `?getVariantInfoFromExACAPI` in R terminal. This function is called by the `annotateVariant` function internally to add annotations from ExAC project.
