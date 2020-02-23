@@ -47,10 +47,9 @@ annotateVariant<-function(file){
     seqDepth <- infoTable[infoTable$Key == "DP",2]
 
     #Number of reads supporting the variant (INFO["AC"]).
-    alleleCount <- infoTable[infoTable$Key == "AC",2]
+    alleleCount <- unlist(strsplit(infoTable[infoTable$Key == "AC",2],","))[variantPosition]
 
     #Percentage of reads supporting the variant versus those supporting reference reads(INFO["AF"]*100).
-    #allelePercent <- as.numeric(infoTable[infoTable$Key == "AF",2])*100
     allelePercent <- as.numeric(unlist(strsplit(infoTable[infoTable$Key == "AF",2],","))[variantPosition])*100
 
     return(c(chromosome,position,typeOfVariation,seqDepth,alleleCount,allelePercent,code))
@@ -93,4 +92,3 @@ createExACAPIVarCode<-function(chromosome,position,reference,variant)
 {
   return(paste0(chromosome,"-",position,"-",reference,"-",variant))
 }
-

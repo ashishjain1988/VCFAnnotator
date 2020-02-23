@@ -43,10 +43,10 @@ In our code, we rank the type of variations according to the magnitude of its de
 
 library(devtools)
 install_github("ashishjain1988/VCFAnnotator-Tempus")
-library(VCFAnnotator-Tempus)
+library(VCFAnnotatorTempus)
 
-VCFfilePath <- system.file('extdata', 'Challenge_data.vcf', package = 'VCFAnnotator-Tempus')
+VCFfilePath <- system.file('extdata', 'Challenge_data.vcf', package = 'VCFAnnotatorTempus')
 t <- annotateVariant(file = VCFfilePath)
-write.table(t,"/Users/jain/Downloads/Challenge_data_annotated_variants.txt",sep="\t",quotes=F,row.names=F)
+write.table(t,"Challenge_data_annotated_variants.txt",sep="\t",quote = F,row.names = F)
 ```
 In addition to that, there is another function `getVariantInfoFromExACAPI` which make a batch call to the Broad Institue's ExAC project API to retreive the annotation information of variants. More information about this function can be found by typing `?getVariantInfoFromExACAPI` in R terminal.
