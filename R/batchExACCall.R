@@ -9,6 +9,11 @@
 #' @return The output is a list object containing the
 #' variant annotation information from the Broad Institute's ExAC
 #' Project for each variant supplied.
+#'
+#' @examples
+#' library(VCFAnnotatorTempus)
+#' postVariantJson <- getVariantInfoFromExACAPI(c("14-21853913-T-C","14-21854139-A-G","22-46615746-A-G"))
+#' print(postVariantJson[["14-21853913-T-C"]]$variant$allele_freq)
 getVariantInfoFromExACAPI<-function(codeVector)
 {
   #Intial Check for code vector

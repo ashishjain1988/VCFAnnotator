@@ -23,6 +23,12 @@ This function annotates the variants by parsing
 VCF file supplied as input and call the Broad Institue's ExAC
 project API to get additional variant annotations.
 }
+\examples{
+library(VCFAnnotatorTempus)
+VCFfilePath <- system.file('extdata', 'Challenge_data_test.vcf', package = 'VCFAnnotatorTempus')
+t <- annotateVariant(file = VCFfilePath)
+head(t)
+}
 \author{
 Ashish Jain
 }

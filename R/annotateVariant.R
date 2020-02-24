@@ -12,6 +12,12 @@
 #' annotation includes the chromosome, Postion, Variant Type,
 #' Depth of the reads, Alternate Allele Count, Percentage of
 #' Allele to Gentotype, Allele Frequency, Consequence.
+#'
+#' @examples
+#' library(VCFAnnotatorTempus)
+#' VCFfilePath <- system.file('extdata', 'Challenge_data_test.vcf', package = 'VCFAnnotatorTempus')
+#' t <- annotateVariant(file = VCFfilePath)
+#' head(t)
 
 annotateVariant<-function(file){
 

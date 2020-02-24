@@ -20,6 +20,11 @@ Project for each variant supplied.
 This function make a batch call to the Broad Institue's ExAC project API
 to retreive the annotation information of variants.
 }
+\examples{
+library(VCFAnnotatorTempus)
+postVariantJson <- getVariantInfoFromExACAPI(c("14-21853913-T-C","14-21854139-A-G","22-46615746-A-G"))
+print(postVariantJson[["14-21853913-T-C"]]$variant$allele_freq)
+}
 \author{
 Ashish Jain
 }
