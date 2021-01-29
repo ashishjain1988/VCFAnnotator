@@ -15,7 +15,7 @@
 #'
 #' @examples
 #' library(VCFAnnotatorTempus)
-#' VCFfilePath <- system.file('extdata', 'Challenge_data_test.vcf', package = 'VCFAnnotatorTempus')
+#' VCFfilePath <- system.file('extdata', 'Challenge_data_test.vcf', package = 'VCFAnnotator')
 #' t <- annotateVariant(file = VCFfilePath)
 #' head(t)
 
