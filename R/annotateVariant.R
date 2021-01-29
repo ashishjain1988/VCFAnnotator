@@ -14,7 +14,7 @@
 #' Allele to Gentotype, Allele Frequency, Consequence.
 #'
 #' @examples
-#' library(VCFAnnotatorTempus)
+#' library(VCFAnnotator)
 #' VCFfilePath <- system.file('extdata', 'Challenge_data_test.vcf', package = 'VCFAnnotator')
 #' t <- annotateVariant(file = VCFfilePath)
 #' head(t)
