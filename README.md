@@ -1,4 +1,4 @@
-# VCFAnnotator-Tempus
+# VCFAnnotator
 This is an R package for the automatic annotation generation of the variants supplied in the VCF file into a text file.
 
 **Requirement**
@@ -20,11 +20,11 @@ You need R version 3.5.1 or above to run this application. Other dependencies ar
 * Now install the `devtools` package
 * `install.packages("devtools")`
 * `library("devtools")`
-* Run command `install_github("ashishjain1988/VCFAnnotator-Tempus")`
+* Run command `install_github("ashishjain1988/VCFAnnotator")`
 
 **From tar file**
 
-* Run command `install.packages("<Absolute Path>/VCFAnnotatorTempus_1.0.0.tar.gz", repos = NULL)`
+* Run command `install.packages("<Absolute Path>/VCFAnnotator_1.0.0.tar.gz", repos = NULL)`
 
 **Running the VCF Annotator**
 
@@ -40,9 +40,9 @@ VCF Annotator is an R package used for the automatic annotation generation of th
 In our code, we rank the type of variations according to the magnitude of its deleterious possibilty (Insertion,Deletion > Complex > Multi Nucleotide Polymorphism > Single Nucleotide Polymorphism). In order to annotate the variants supplied in the VCF file `annotateVariant` function of this package is used. This function requires the path of the VCF file and then automatically annotates the variants and supply them in a data.frame object which can be written into a text file. A simple example is shown below by using an R terrminal.
 
 ```R
-library(VCFAnnotatorTempus)
+library(VCFAnnotator)
 
-VCFfilePath <- system.file('extdata', 'Challenge_data.vcf', package = 'VCFAnnotatorTempus')
+VCFfilePath <- system.file('extdata', 'Challenge_data.vcf', package = 'VCFAnnotator')
 t <- annotateVariant(file = VCFfilePath)
 write.table(t,"Challenge_data_annotated_variants.txt",sep="\t",quote = F,row.names = F)
 ```
